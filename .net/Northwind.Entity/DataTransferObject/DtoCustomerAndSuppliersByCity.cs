@@ -1,12 +1,13 @@
 ﻿using Northwnd.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwnd.Entity.DataTransferObject
 {
-    public partial class CustomerAndSuppliersByCity : EntityBase
+    public class DtoCustomerAndSuppliersByCity : DtoBase
     {
         public string City { get; set; }
         public string CompanyName { get; set; }

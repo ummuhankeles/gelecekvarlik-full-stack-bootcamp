@@ -1,12 +1,13 @@
 ﻿using Northwnd.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwnd.Entity.DataTransferObject
 {
-    public partial class CurrentProductList : EntityBase
+    public class DtoCurrentProductList : DtoBase
     {
         public int ProductId { get; set; }
         public string ProductName { get; set; }

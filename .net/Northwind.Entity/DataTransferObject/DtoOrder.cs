@@ -1,16 +1,16 @@
 ﻿using Northwnd.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwnd.Entity.DataTransferObject
 {
-    public partial class Order : EntityBase
+    public class DtoOrder : DtoBase
     {
-        public Order()
+        public DtoOrder()
         {
-            OrderDetails = new HashSet<OrderDetail>();
         }
 
         public int OrderId { get; set; }
@@ -27,10 +27,5 @@ namespace Northwind.Entity.Models
         public string ShipRegion { get; set; }
         public string ShipPostalCode { get; set; }
         public string ShipCountry { get; set; }
-
-        public virtual Customer Customer { get; set; }
-        public virtual Employee Employee { get; set; }
-        public virtual Shipper ShipViaNavigation { get; set; }
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

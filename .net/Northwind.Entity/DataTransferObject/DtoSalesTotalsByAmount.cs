@@ -1,12 +1,13 @@
 ﻿using Northwnd.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwnd.Entity.DataTransferObject
 {
-    public partial class SalesTotalsByAmount : EntityBase
+    public class DtoSalesTotalsByAmount : DtoBase
     {
         public decimal? SaleAmount { get; set; }
         public int OrderId { get; set; }

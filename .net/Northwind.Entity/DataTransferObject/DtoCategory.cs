@@ -1,23 +1,21 @@
 ﻿using Northwnd.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwnd.Entity.DataTransferObject
 {
-    public partial class Category : EntityBase
+    public class DtoCategory : DtoBase
     {
-        public Category()
+        public DtoCategory()
         {
-            Products = new HashSet<Product>();
         }
 
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
         public byte[] Picture { get; set; }
-
-        public virtual ICollection<Product> Products { get; set; }
     }
 }
