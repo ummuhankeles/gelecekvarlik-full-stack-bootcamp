@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Northwnd.Interface
 {
-    interface ICategorySalesFor1997Service : IGenericService<CategorySalesFor1997, DtoCategorySalesFor1997>
+    public interface ICategorySalesFor1997Service : IGenericService<CategorySalesFor1997, DtoCategorySalesFor1997>
     {
         IQueryable<DtoCategorySalesFor1997> GetTotalReport();
     }
