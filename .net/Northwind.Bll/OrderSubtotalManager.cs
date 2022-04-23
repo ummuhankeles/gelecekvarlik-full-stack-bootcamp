@@ -2,15 +2,20 @@
 using Northwnd.Entity.DataTransferObject;
 using Northwnd.Interface;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Northwnd.Dal.Abstract;
 
 namespace Northwnd.Bll
 {
     public class OrderSubtotalManager : GenericManager<OrderSubtotal, DtoOrderSubtotal>, IOrderSubtotalService
     {
+        public readonly IOrderSubtotalRepository orderSubtotalRepository;
+        public OrderSubtotalManager(IServiceProvider service) : base(service)
+        {
+            orderSubtotalRepository = service.GetService<IOrderSubtotalRepository>();
+        }
+
         public IQueryable<DtoOrderSubtotal> GetTotalReport()
         {
             throw new NotImplementedException();

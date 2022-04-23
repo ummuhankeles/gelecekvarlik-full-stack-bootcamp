@@ -1,16 +1,23 @@
 ﻿using Northwind.Entity.Models;
+using Northwnd.Dal.Abstract;
 using Northwnd.Entity.DataTransferObject;
 using Northwnd.Interface;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace Northwnd.Bll
 {
     public class SalesTotalsByAmountManager : GenericManager<SalesTotalsByAmount, DtoSalesTotalsByAmount>, ISalesTotalsByAmountService
     {
+        public readonly ISalesTotalsByAmountRepository salesTotalsByAmountRepository;
+
+        public SalesTotalsByAmountManager(IServiceProvider service) : base(service)
+        {
+            salesTotalsByAmountRepository = service.GetService<ISalesTotalsByAmountRepository>();
+        }
+
         public IQueryable<DtoSalesTotalsByAmount> GetTotalReport()
         {
             throw new NotImplementedException();

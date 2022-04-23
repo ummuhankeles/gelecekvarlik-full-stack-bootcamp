@@ -38,6 +38,8 @@ namespace Northwnd.Interface
         Task<IResponse<bool>> DeleteByIdAsync(int id, bool saveChanges = true);
 
         // iqueryable listeleme
-        IQueryable<TDto> GetQueryable();
+        IResponse<IQueryable<TDto>> GetQueryable();
+
+        void Save();
     }
 }

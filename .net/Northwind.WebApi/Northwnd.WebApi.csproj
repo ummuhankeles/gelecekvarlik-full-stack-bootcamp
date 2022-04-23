@@ -8,4 +8,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Bll\Northwnd.Bll.csproj" />
+    <ProjectReference Include="..\Northwind.Dal\Northwnd.Dal.csproj" />
+    <ProjectReference Include="..\Northwind.Interface\Northwnd.Interface.csproj" />
+  </ItemGroup>
+
 </Project>

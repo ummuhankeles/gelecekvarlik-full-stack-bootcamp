@@ -2,15 +2,20 @@
 using Northwnd.Entity.DataTransferObject;
 using Northwnd.Interface;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Northwnd.Dal.Abstract;
 
 namespace Northwnd.Bll
 {
     public class EmployeeTerritoryManager : GenericManager<EmployeeTerritory, DtoEmployeeTerritory>, IEmployeeTerritoryService
     {
+        public readonly IEmployeeTerritoryRepository employeeTerritoryRepository;
+        public EmployeeTerritoryManager(IServiceProvider service) : base(service)
+        {
+            employeeTerritoryRepository = service.GetService<IEmployeeTerritoryRepository>();
+        }
+
         public IQueryable<DtoEmployeeTerritory> GetTotalReport()
         {
             throw new NotImplementedException();

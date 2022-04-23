@@ -2,15 +2,21 @@
 using Northwnd.Entity.DataTransferObject;
 using Northwnd.Interface;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Northwnd.Dal.Abstract;
 
 namespace Northwnd.Bll
 {
     public class ShipperManager : GenericManager<Shipper, DtoShipper>, IShipperService
     {
+        public readonly IShipperRepository shipperRepository;
+        public ShipperManager(IServiceProvider service) : base(service)
+        {
+            shipperRepository = service.GetService<IShipperRepository>();
+
+        }
+
         public IQueryable<DtoShipper> GetTotalReport()
         {
             throw new NotImplementedException();

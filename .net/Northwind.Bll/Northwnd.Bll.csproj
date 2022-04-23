@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Northwind.Dal\Northwnd.Dal.csproj" />
     <ProjectReference Include="..\Northwind.Entity\Northwnd.Entity.csproj" />
     <ProjectReference Include="..\Northwind.Interface\Northwnd.Interface.csproj" />
   </ItemGroup>
