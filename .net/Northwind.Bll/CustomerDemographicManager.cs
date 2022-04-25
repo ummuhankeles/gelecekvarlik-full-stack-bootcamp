@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             customerDemographicRepository = service.GetService<ICustomerDemographicRepository>();
         }
-
-        public IQueryable<DtoCustomerDemographic> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

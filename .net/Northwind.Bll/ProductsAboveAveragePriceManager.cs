@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             productsAboveAveragePriceRepository = service.GetService<IProductsAboveAveragePriceRepository>();
         }
-
-        public IQueryable<DtoProductsAboveAveragePrice> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -17,10 +17,5 @@ namespace Northwnd.Bll
         {
             salesTotalsByAmountRepository = service.GetService<ISalesTotalsByAmountRepository>();
         }
-
-        public IQueryable<DtoSalesTotalsByAmount> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

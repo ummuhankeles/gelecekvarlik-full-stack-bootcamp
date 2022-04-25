@@ -9,6 +9,5 @@ namespace Northwnd.Dal.Abstract
 {
     public interface IShipperRepository
     {
-        IQueryable<Shipper> GetTotalReport();
      }
 }

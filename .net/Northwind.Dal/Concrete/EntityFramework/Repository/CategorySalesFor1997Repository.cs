@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public CategorySalesFor1997Repository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<CategorySalesFor1997> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

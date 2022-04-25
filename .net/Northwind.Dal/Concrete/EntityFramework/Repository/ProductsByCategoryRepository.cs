@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public ProductsByCategoryRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<ProductsByCategory> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

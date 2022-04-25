@@ -16,10 +16,5 @@ namespace Northwnd.Bll
             shipperRepository = service.GetService<IShipperRepository>();
 
         }
-
-        public IQueryable<DtoShipper> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

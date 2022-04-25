@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             quarterlyOrderRepository = service.GetService<IQuarterlyOrderRepository>();
         }
-
-        public IQueryable<DtoQuarterlyOrder> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ISalesByCategoryService  :IGenericService<SalesByCategory, DtoSalesByCategory>
     {
-        IQueryable<DtoSalesByCategory> GetTotalReport();
     }
 }

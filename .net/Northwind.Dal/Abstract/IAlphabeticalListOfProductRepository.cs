@@ -9,6 +9,5 @@ namespace Northwnd.Dal.Abstract
 {
     public interface IAlphabeticalListOfProductRepository
     {
-        IQueryable<AlphabeticalListOfProduct> GetTotalReport();
     }
 }

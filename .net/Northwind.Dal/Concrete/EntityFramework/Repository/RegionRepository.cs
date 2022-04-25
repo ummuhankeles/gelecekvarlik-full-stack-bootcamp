@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public RegionRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<Region> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

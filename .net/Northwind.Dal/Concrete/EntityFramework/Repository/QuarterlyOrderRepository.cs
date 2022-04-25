@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public QuarterlyOrderRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<QuarterlyOrder> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

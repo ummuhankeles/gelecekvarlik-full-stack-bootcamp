@@ -9,6 +9,5 @@ namespace Northwnd.Dal.Abstract
 {
     public interface ICustomerAndSuppliersByCityRepository
     {
-        IQueryable<CustomerAndSuppliersByCity> GetTotalReport();
      }
 }

@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public SalesTotalsByAmountRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<SalesTotalsByAmount> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

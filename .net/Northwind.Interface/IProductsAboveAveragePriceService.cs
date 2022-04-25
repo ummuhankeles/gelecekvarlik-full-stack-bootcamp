@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IProductsAboveAveragePriceService : IGenericService<ProductsAboveAveragePrice, DtoProductsAboveAveragePrice>
     {
-        IQueryable<DtoProductsAboveAveragePrice> GetTotalReport();
     }
 }

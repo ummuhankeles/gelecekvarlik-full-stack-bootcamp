@@ -16,10 +16,5 @@ namespace Northwnd.Bll
         {
             regionRepository = service.GetService<IRegionRepository>();
         }
-
-        public IQueryable<DtoRegion> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

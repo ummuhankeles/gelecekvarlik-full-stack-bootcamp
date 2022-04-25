@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ISalesTotalsByAmountService : IGenericService<SalesTotalsByAmount, DtoSalesTotalsByAmount>
     {
-        IQueryable<DtoSalesTotalsByAmount> GetTotalReport();
     }
 }

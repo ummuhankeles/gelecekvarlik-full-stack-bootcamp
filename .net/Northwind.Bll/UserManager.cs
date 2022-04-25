@@ -17,10 +17,5 @@ namespace Northwnd.Bll
             userRepository = service.GetService<IUserRepository>();
 
         }
-
-        public IQueryable<DtoUser> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

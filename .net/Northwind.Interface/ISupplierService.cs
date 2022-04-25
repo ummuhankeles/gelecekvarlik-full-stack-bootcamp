@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ISupplierService : IGenericService<Supplier, DtoSupplier>
     {
-        IQueryable<DtoSupplier> GetTotalReport();
     }
 }

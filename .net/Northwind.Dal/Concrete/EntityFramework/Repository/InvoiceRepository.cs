@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public InvoiceRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<Invoice> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

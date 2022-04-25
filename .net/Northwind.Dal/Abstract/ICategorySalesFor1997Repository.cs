@@ -9,6 +9,5 @@ namespace Northwnd.Dal.Abstract
 {
     public interface ICategorySalesFor1997Repository
     {
-        IQueryable<CategorySalesFor1997> GetTotalReport();
      }
 }

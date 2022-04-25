@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IOrderDetailsExtendedService : IGenericService<OrderDetailsExtended, DtoOrderDetailsExtended>
     {
-        IQueryable<DtoOrderDetailsExtended> GetTotalReport();
     }
 }

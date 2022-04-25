@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IUserService : IGenericService<User, DtoUser>
     {
-        IQueryable<DtoUser> GetTotalReport();
     }
 }

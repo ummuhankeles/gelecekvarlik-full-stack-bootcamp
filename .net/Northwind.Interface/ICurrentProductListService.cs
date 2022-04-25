@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ICurrentProductListService : IGenericService<CurrentProductList, DtoCurrentProductList>
     {
-        IQueryable<DtoCurrentProductList> GetTotalReport();
     }
 }

@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IOrderSubtotalService : IGenericService<OrderSubtotal, DtoOrderSubtotal>
     {
-        IQueryable<DtoOrderSubtotal> GetTotalReport();
     }
 }

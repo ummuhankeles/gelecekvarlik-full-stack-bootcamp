@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public CustomerAndSuppliersByCityRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<CustomerAndSuppliersByCity> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

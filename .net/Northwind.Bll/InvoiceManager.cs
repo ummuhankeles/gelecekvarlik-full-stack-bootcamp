@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             ınvoiceRepository = service.GetService<IInvoiceRepository>();
         }
-
-        public IQueryable<DtoInvoice> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -19,10 +19,5 @@ namespace Northwnd.Bll
         {
             categoryRepository = service.GetService<ICategoryRepository>();
         }
-
-        public IQueryable<DtoCategory> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

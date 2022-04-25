@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public OrderSubtotalRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<OrderSubtotal> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

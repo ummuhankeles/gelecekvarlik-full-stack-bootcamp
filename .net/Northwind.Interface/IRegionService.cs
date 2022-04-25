@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IRegionService : IGenericService<Region, DtoRegion>
     {
-        IQueryable<DtoRegion> GetTotalReport();
     }
 }

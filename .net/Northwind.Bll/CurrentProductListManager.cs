@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             currentProductListRepository = service.GetService<ICurrentProductListRepository>();
         }
-
-        public IQueryable<DtoCurrentProductList> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

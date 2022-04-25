@@ -11,6 +11,5 @@ namespace Northwnd.Interface
 {
     public interface IAlphabeticalListOfProductService : IGenericService<AlphabeticalListOfProduct, DtoAlphabeticalListOfProduct>
     {
-        IQueryable<DtoAlphabeticalListOfProduct> GetTotalReport();
     }
 }

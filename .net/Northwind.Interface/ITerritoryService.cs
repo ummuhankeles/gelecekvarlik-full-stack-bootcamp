@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ITerritoryService : IGenericService<Territory, DtoTerritory>
     {
-        IQueryable<DtoTerritory> GetTotalReport();
     }
 }

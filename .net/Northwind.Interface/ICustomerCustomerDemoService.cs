@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ICustomerCustomerDemoService : IGenericService<CustomerCustomerDemo, DtoCustomerCustomerDemo>
     {
-        IQueryable<DtoCustomerCustomerDemo> GetTotalReport();
     }
 }

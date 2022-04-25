@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IQuarterlyOrderService : IGenericService<QuarterlyOrder, DtoQuarterlyOrder>
     {
-        IQueryable<DtoQuarterlyOrder> GetTotalReport();
     }
 }

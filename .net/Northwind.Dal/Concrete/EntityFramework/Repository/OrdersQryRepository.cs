@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public OrdersQryRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<OrdersQry> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

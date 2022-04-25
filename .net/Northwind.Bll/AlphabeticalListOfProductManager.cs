@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             alphabeticalListOfProductRepository = service.GetService<IAlphabeticalListOfProductRepository>();
         }
-
-        public IQueryable<DtoAlphabeticalListOfProduct> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

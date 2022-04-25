@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public ProductsAboveAveragePriceRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<ProductsAboveAveragePrice> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

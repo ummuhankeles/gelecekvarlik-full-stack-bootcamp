@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             customerAndSuppliersByCityRepository = service.GetService<ICustomerAndSuppliersByCityRepository>();
         }
-
-        public IQueryable<DtoCustomerAndSuppliersByCity> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

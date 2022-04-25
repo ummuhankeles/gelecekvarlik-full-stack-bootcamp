@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             orderSubtotalRepository = service.GetService<IOrderSubtotalRepository>();
         }
-
-        public IQueryable<DtoOrderSubtotal> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

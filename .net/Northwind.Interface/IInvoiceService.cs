@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IInvoiceService : IGenericService<Invoice, DtoInvoice>
     {
-        IQueryable<DtoInvoice> GetTotalReport();
     }
 }

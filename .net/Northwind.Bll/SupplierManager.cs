@@ -16,10 +16,5 @@ namespace Northwnd.Bll
         {
             supplierRepository = service.GetService<ISupplierRepository>();
         }
-
-        public IQueryable<DtoSupplier> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

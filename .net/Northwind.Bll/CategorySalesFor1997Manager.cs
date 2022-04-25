@@ -17,10 +17,5 @@ namespace Northwnd.Bll
             categorySalesFor1997Repository = service.GetService<ICategorySalesFor1997Repository>();
 
         }
-
-        public IQueryable<DtoCategorySalesFor1997> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

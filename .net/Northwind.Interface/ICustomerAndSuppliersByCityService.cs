@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface ICustomerAndSuppliersByCityService : IGenericService<CustomerAndSuppliersByCity, DtoCustomerAndSuppliersByCity>
     {
-        IQueryable<DtoCustomerAndSuppliersByCity> GetTotalReport();
     }
 }

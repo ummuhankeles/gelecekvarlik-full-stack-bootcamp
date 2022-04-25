@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public EmployeeTerritoryRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<EmployeeTerritory> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

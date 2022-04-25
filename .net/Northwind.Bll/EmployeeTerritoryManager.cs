@@ -15,10 +15,5 @@ namespace Northwnd.Bll
         {
             employeeTerritoryRepository = service.GetService<IEmployeeTerritoryRepository>();
         }
-
-        public IQueryable<DtoEmployeeTerritory> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

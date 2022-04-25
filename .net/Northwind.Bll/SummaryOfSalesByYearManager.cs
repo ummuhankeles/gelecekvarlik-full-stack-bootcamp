@@ -17,10 +17,5 @@ namespace Northwnd.Bll
             summaryOfSalesByYearRepository = service.GetService<ISummaryOfSalesByYearRepository>();
 
         }
-
-        public IQueryable<DtoSummaryOfSalesByYear> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

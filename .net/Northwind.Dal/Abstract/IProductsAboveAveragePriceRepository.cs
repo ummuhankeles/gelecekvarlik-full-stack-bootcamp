@@ -9,6 +9,5 @@ namespace Northwnd.Dal.Abstract
 {
     public interface IProductsAboveAveragePriceRepository
     {
-        IQueryable<ProductsAboveAveragePrice> GetTotalReport();
      }
 }

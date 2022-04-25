@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public CustomerCustomerDemoRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<CustomerCustomerDemo> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

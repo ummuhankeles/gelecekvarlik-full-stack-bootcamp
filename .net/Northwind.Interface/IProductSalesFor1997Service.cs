@@ -10,6 +10,5 @@ namespace Northwnd.Interface
 {
     public interface IProductSalesFor1997Service : IGenericService<ProductSalesFor1997, DtoProductSalesFor1997>
     {
-        IQueryable<DtoProductSalesFor1997> GetTotalReport();
     }
 }

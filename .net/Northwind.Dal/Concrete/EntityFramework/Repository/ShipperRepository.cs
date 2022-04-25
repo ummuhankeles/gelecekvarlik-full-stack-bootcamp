@@ -14,10 +14,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         public ShipperRepository(DbContext context) : base(context)
         {
         }
-
-        public IQueryable<Shipper> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

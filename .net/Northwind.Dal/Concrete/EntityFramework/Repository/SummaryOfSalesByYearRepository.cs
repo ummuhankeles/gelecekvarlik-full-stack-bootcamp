@@ -15,9 +15,5 @@ namespace Northwnd.Dal.Concrete.EntityFramework.Repository
         {
         }
 
-        public IQueryable<SummaryOfSalesByYear> GetTotalReport()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
