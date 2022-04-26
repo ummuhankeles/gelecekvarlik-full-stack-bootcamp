@@ -27,7 +27,9 @@ namespace Northwnd.Bll
             unitOfWork = service.GetService<IUnitOfWork>();
             repository = unitOfWork.GetRepository<T>();
         }
+        #endregion
 
+        #region Methods
         public IResponse<TDto> Add(TDto item, bool saveChanges = true)
         {
             try
